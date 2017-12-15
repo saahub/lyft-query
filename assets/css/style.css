@@ -1,0 +1,17 @@
+body {
+	background-color: #cd008a;
+}
+
+img {
+	display: flex;
+	padding-top: 5em;
+  padding: 0.5em;
+  margin: 3em auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#second {
+	background-image: url(../img/Lyft-interior-featured.jpg);
+	width: 100%;
+}
