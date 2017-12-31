@@ -4,26 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lyft Mobile</title>
+  <title>Lyft</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Enlazo jQuery -->
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<!-- vista splash -->
+<!-- splash -->
 <body>
   <div class="col s12 l12">
  <div id="splash"><img src="assets/img/logos_lyft@2x.png"></div>
 </div>
-<div>
-<div class="col s12 l6">
-  <img id="logo" src="assets/img/lyft.jpg" alt="ja">
+
+<div class="col s12 l12 ">
+  <div class="logo2"><img class="responsive-img" id="logo" src="assets/img/lyft.jpg" alt="ja"></div>
 </div>
-<a class="waves-effect waves-light btn-large purple accent-3" id="btnsign">login In</a>
-<a class="waves-effect waves-light btn-large purple accent-3" id="btnsign">Sign Up</a>
+<!-- botones -->
+<div class="row-button">
+<div class="col s12 l12">
+<a class="waves-effect waves-light btn-large purple accent-3 modal-trigger" id="btn1">login In</a>
+<a href="#modal1" class="waves-effect waves-light btn-large purple accent-3 modal-trigger" id="btn2">Sign Up</a>
 </div>
+</div>
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Sing Up</h4>
+      <p>join now for free ride credit</p>
+      <hr>
+      <div class="valign-wrapper">
+       <div class="col s6">
+      <a class='dropdown-button btn @extend .grey darken-1-text, .text-lighten-4 grey darken-1 lighten-4' href='#' data-activates='dropdown1'>Pais</a>
+      <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><img class="responsive-img" src="assets/img/flag-for-chile_1f1e8-1f1f1.png" id="tamaño"></li>
+    <li><img class="responsive-img" src="assets/img/flag-for-peru_1f1f5-1f1ea.png" id="tamaño"></li>
+    <li><img class="responsive-img" src="assets/img/gmy.png" id="tamaño"></li>
+  </ul>
+  </div>
+  <div class="input-field col s6">
+          <input id="ten" placeholder="51" type="number" class="validate" >
+          <label for="first_name"></label>
+        </div>
+    </div>
+          
+    <div class="modal-footer">
+    <div class="row-button">
+<div class="col s12 l12">
+<p>We'll send a text to verify your phone</p>
+<a id="habilitar"  class="btn disabled waves-light btn-large">Next</a> <span id="lab-551"></span>
+</div>
+</div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>

@@ -2,9 +2,25 @@ body {
   background-color: #ff00bf;
 }
 
+#splash img {
+  margin-top: 10em;
+  width: 100%;
+
+  
+}
+
+.logo2 img {
+  background: linear-gradient(#ff00bf);
+}
 
 
-#logo {
-  display: flex;
+#tamaño {
+  width: 4em;
+}
 
+.btn-disabled {
+
+}
+.modal-footer {
+  height: 20em;
 }
